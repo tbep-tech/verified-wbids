@@ -2,28 +2,55 @@
 output:
   html_document:
     css: "styles.css"
+    includes:
+      after_body: footer.html
 ---
 
 ```{r setup, warning = F, message = F, echo = F}
 # knitr globals
 knitr::opts_chunk$set(message = F, echo = F, warning = F, fig.align = 'center')
 
-library(tidyverse)
-library(sf)
-library(tbeptools)
-library(ggspatial)
 library(here)
-
-load(file = here('data/tbvwbid.RData'))
-
 ```
 
 # Verified water bodies in the Tampa Bay watershed {.tabset .tabset-pills}
+
+![](tbep_logo.png)
 
 This report summarizes the verified water body IDs (WBIDs) in the Tampa Bay watershed as provided by the Florida Department of Environmental Protection (available [here](https://geodata.dep.state.fl.us/datasets/verified-list-waterbody-ids-wbids/)).  The summaries are reported for surface water parameters and by major parameter categories.  Please contact TBEP Program Scientist [Dr. Marcus Beck](mailto:mbeck@tbep.org) with questions.  All source materials are available on GitHub [here](https://github.com/tbep-tech/verified-wbids).
 
 ## Maps
 
+<a href="https://raw.githubusercontent.com/tbep-tech/verified-wbids/main/figures/mapparm.jpg" download>Download</a>
+```{r}
+knitr::include_graphics(here('figures/mapparm.jpg'))
+```
+
+<a href="https://raw.githubusercontent.com/tbep-tech/verified-wbids/main/figures/mapparmgrp.jpg" download>Download</a>
+```{r, out.width = '55%'}
+knitr::include_graphics(here('figures/mapparmgrp.jpg'))
+```
+
 ## Listings by count
 
+<a href="https://raw.githubusercontent.com/tbep-tech/verified-wbids/main/figures/countparm.jpg" download>Download</a>
+```{r}
+knitr::include_graphics(here('figures/countparm.jpg'))
+```
+
+<a href="https://raw.githubusercontent.com/tbep-tech/verified-wbids/main/figures/countparmgrp.jpg" download>Download</a>
+```{r, out.width = '80%'}
+knitr::include_graphics(here('figures/countparmgrp.jpg'))
+```
+
 ## Listing by area
+
+<a href="https://raw.githubusercontent.com/tbep-tech/verified-wbids/main/figures/areaparm.jpg" download>Download</a>
+```{r}
+knitr::include_graphics(here('figures/areaparm.jpg'))
+```
+
+<a href="https://raw.githubusercontent.com/tbep-tech/verified-wbids/main/figures/areaparmgrp.jpg" download>Download</a>
+```{r, out.width = '80%'}
+knitr::include_graphics(here('figures/areaparmgrp.jpg'))
+```
