@@ -1,0 +1,29 @@
+---
+output:
+  html_document:
+    css: "styles.css"
+---
+
+```{r setup, warning = F, message = F, echo = F}
+# knitr globals
+knitr::opts_chunk$set(message = F, echo = F, warning = F, fig.align = 'center')
+
+library(tidyverse)
+library(sf)
+library(tbeptools)
+library(ggspatial)
+library(here)
+
+load(file = here('data/tbvwbid.RData'))
+
+```
+
+# Verified water bodies in the Tampa Bay watershed {.tabset .tabset-pills}
+
+This report summarizes the verified water body IDs (WBIDs) in the Tampa Bay watershed as provided by the Florida Department of Environmental Protection (available [here](https://geodata.dep.state.fl.us/datasets/verified-list-waterbody-ids-wbids/)).  The summaries are reported for surface water parameters and by major parameter categories.  Please contact TBEP Program Scientist [Dr. Marcus Beck](mailto:mbeck@tbep.org) with questions.  All source materials are available on GitHub [here](https://github.com/tbep-tech/verified-wbids).
+
+## Maps
+
+## Listings by count
+
+## Listing by area
