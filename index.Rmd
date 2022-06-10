@@ -43,7 +43,7 @@ knitr::include_graphics(here('figures/countparm.jpg'))
 knitr::include_graphics(here('figures/countparmgrp.jpg'))
 ```
 
-## Listing by area
+## Listing by total area
 
 <a href="https://raw.githubusercontent.com/tbep-tech/verified-wbids/main/figures/areaparm.jpg" download>Download</a>
 ```{r}
